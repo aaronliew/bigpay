@@ -27,7 +27,7 @@ public class DeliveryServiceImpl implements DeliveryService{
         this.nodes = nodes;
         this.edges = edges;
         this.trains = trains;
-        this.packages = packages;
+        this.packages = packages.stream().filter(Objects::nonNull).toList();
         this.moves = new ArrayList<>();
         this.adjacencyList = new HashMap<>();
         this.completedPackages = new HashMap<>();
