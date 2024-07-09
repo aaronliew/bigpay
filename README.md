@@ -1,4 +1,5 @@
 # Autonomous mail delivery trains
+This is running in java 17
 Assumption:
 1. The train can only carry multiples packages only if packages all located at a same node.
 2. The train can carry the packages only if the total weight of the packages is less than or equal to the capacity of the train.
